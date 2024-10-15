@@ -1,29 +1,54 @@
 // import logo from './logo.svg';
+import Introduction from './components/Introduction';
+import ProgressBar from './components/ProgressBar';
 import styles from './index.module.css'
 import Image from './profile.jpg'
+import ReactImage from './assets/reactLogo.png'
+import HtmlImage from './assets/htmlLogo.png'
+import FlaskImage from './assets/flaskLogo.png'
+import CssImage from './assets/cssLogo.png'
+import PythonImage from './assets/pythonLogo.png'
+import JsImage from './assets/jsLogo.png'
+import NodeJSImage from './assets/nodejsLogo.png'
+import MongoDBImage from './assets/mongodbLogo.png'
+
 
 function App() {
-  const description = 'Dedicated software developer with 3+ years of experience in various programming languages or technologies. Skilled in [list of key skills, e.g., full-stack development, data analysis, machine learning]. Passionate about crafting innovative solutions and delivering high-quality products. Committed to staying up-to-date with the latest industry trends and technologies.';
   return (
     <div className="App">
-     <div className={styles.navbar}>
-        <a className={`${styles.navItem} ${styles.active}`}>Home</a>
-        <a className={styles.navItem}>Skills</a>
-        <a className={styles.navItem}>Projects</a>
-        <a className={styles.navItem}>Contact</a>
-     </div>
-
-     <div className={styles.firstPart}>
-        <div className={styles.introduction}>
-          <div className={styles.profileDiv}>
-            <img className={styles.profileImg} src={Image} alt='Profile photo'/>
+     <Introduction styles={styles} Image={Image}/>
+     <div className={styles.skillsDiv}>
+        <h1 className={styles.skillsHeading}>Skills & Technologies</h1>
+        <div className={styles.skills}>
+          <div className={styles.skillItem}>
+            <ProgressBar barLength={400} skillImage={ReactImage} skillPercentage={'80%'} skillName="React"/>
           </div>
-          <div className={styles.profileDesc}>
-            <h2>I am <span className={styles.textBeautify}>Deepinder</span>, a passionate <span className={styles.textBeautify}> Fullstack Developer</span></h2>
-            {/* <p>this is a test</p> */}
-            <p className={styles.descriptionText}>
-            {description}
-            </p>
+          <div className={styles.skillItem1}>
+            <ProgressBar barLength={430} skillImage={HtmlImage} skillPercentage={'90%'} skillName="HTML"/>
+          </div>
+        </div>
+        <div className={styles.skills}>
+          <div className={styles.skillItem}>
+            <ProgressBar barLength={420} skillImage={FlaskImage} skillPercentage={'85%'} skillName="Flask"/>
+          </div>
+          <div className={styles.skillItem1}>
+            <ProgressBar barLength={390} skillImage={CssImage} skillPercentage={'75%'} skillName="CSS"/>
+          </div>
+        </div>
+        <div className={styles.skills}>
+          <div className={styles.skillItem}>
+            <ProgressBar barLength={440} skillImage={PythonImage} skillPercentage={'95%'} skillName="Python"/>
+          </div>
+          <div className={styles.skillItem1}>
+            <ProgressBar barLength={410} skillImage={JsImage} skillPercentage={'80%'} skillName="JavaScript"/>
+          </div>
+        </div>
+        <div className={styles.skills}>
+          <div className={styles.skillItem}>
+            <ProgressBar barLength={380} skillImage={NodeJSImage} skillPercentage={'70%'} skillName="Node JS"/>
+          </div>
+          <div className={styles.skillItem1}>
+            <ProgressBar barLength={380} skillImage={MongoDBImage} skillPercentage={'70%'} skillName="MongoDB"/>
           </div>
         </div>
      </div>

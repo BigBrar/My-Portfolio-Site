@@ -1,0 +1,88 @@
+@keyframes hidShow {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+.skillLogo{
+    width: 35px;
+    /* border-radius: 10px; */
+    display: grid;
+    align-items: center;
+    filter: drop-shadow(0px 0px 2px #7e7c7c);
+    /* style={{width:'35px', borderRadius:'10px', display:'grid', alignItems:'center' */
+}
+
+.skillsDiv{
+    display: block;
+    margin: 0 auto;
+    animation: hidShow 2s ease;
+}
+
+.progressBar{
+    position: relative;
+    height: 8px;
+    background-color: #dd6a58;
+    border-radius: 5px;
+    z-index: 10;
+    opacity: 1;
+    /* animation: percentageFlow 5s; */
+}
+
+.totalProgress{
+    position: absolute;
+    top: 0px;
+    /* left: 0px; */
+    height: 8px;
+    border-radius: 5px;
+    z-index: 1;
+    width: 450px;
+    background-color: rgb(247, 191, 191);
+    filter: drop-shadow(0px 0px 6px #ffffff);
+}
+
+.flowingColor{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    /* border-radius: 5px; */
+    height: 8px;
+    top: 0px;
+    width: 30px;
+    background-color: rgb(247, 191, 191);
+    left: 450px;
+    filter: drop-shadow(0px 0px 5px #ffffff);
+    animation: colorFlow 5s infinite;
+}
+
+@keyframes colorFlow {
+    0% {
+        left: 0%;
+        opacity: 0.1;
+    }
+    10%{
+        opacity: 0.5;
+    }
+    20%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.7;
+    }
+    90%{
+        opacity: 0.1;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+  }
+
+@keyframes percentageFlow {
+    0% {
+        width: 0%;
+    }
+    
+    100% {
+        width: 100%;
+    }
+  }
