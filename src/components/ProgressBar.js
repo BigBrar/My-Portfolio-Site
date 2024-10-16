@@ -3,6 +3,8 @@ import {  motion } from "framer-motion";
 
 export default function ProgressBar({barLength, skillImage,skillPercentage, skillName}){
     console.log(barLength)
+    barLength = barLength-190
+    // barLength=80
     return (
         <motion.div className={imageStyle.skillsDiv} style={{display:'flex', gap:'10px'}}>
         <div>
@@ -25,7 +27,7 @@ export default function ProgressBar({barLength, skillImage,skillPercentage, skil
                     visible: { width:barLength },
                     hidden: { width:0 }
                 }}
-                className={imageStyle.progressBar} style={{width:`${barLength}px`}}></motion.div>
+                className={imageStyle.progressBar} ></motion.div>
                 <div className={imageStyle.flowingColor} ></div>
             </div>
         </div>

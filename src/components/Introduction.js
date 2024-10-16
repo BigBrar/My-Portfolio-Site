@@ -21,7 +21,7 @@ export default function Introduction({styles, Image}){
           <div className={styles.profileDesc}>
             <h2>I am <span className={styles.textBeautify}>Deepinder</span>, a passionate <span className={styles.textBeautify}> Fullstack Developer</span></h2>
             {/* <p>this is a test</p> */}
-            <p className={styles.descriptionText}>
+            <p  className={styles.descriptionText}>
             {description}
             </p>
           </div>

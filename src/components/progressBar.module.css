@@ -15,7 +15,9 @@
 .skillsDiv{
     display: block;
     margin: 0 auto;
-    animation: hidShow 2s ease;
+    /* width:'100%';
+    max-width:'475px';
+    min-width: none; */
 }
 
 .progressBar{
@@ -29,13 +31,18 @@
 }
 
 .totalProgress{
+    /* display: none; */
     position: absolute;
     top: 0px;
     /* left: 0px; */
     height: 8px;
     border-radius: 5px;
     z-index: 1;
-    width: 450px;
+    width:260px; 
+    /* width: 450px; */
+    /* width: 100%; */
+    /* max-width: 450px; */
+    /* min-width: ; */
     background-color: rgb(247, 191, 191);
     filter: drop-shadow(0px 0px 6px #ffffff);
 }
