@@ -1,3 +1,19 @@
+::-webkit-scrollbar{
+    width: 1.4em;
+    height: 1em;
+}
+
+::-webkit-scrollbar-track{
+    /* background: #f7bea0; */
+    background: transparent;
+    /* background: hsl(157, 75%, 50%); */
+}
+::-webkit-scrollbar-thumb{
+    background: #dd6a58;
+    border: .25em solid #fadfcf;
+    border-radius: 100vw;
+}
+
 @keyframes color {
     0% {
       background-position: 0% 50%;
@@ -95,16 +111,17 @@ body{
     width: 250px;
     animation-name: backgroundAnimation;
     animation-duration: 2s;
+    animation-play-state: paused;
     /* right: 0px; */
 }
 
 @keyframes backgroundAnimation {
     0% {
-        height: 250px;
+        height: 230px;
         bottom: 0px;
     }
-    15%{
-        height: 250px;
+    10%{
+        height: 230px;
         bottom: 0px;
     }
     100% {
@@ -198,6 +215,7 @@ body{
     border: 0px;
     width: 100%;
     max-width: 450px;
+    padding-top: 20px;
     /* min-width: none; */
     /* width: 450px; */
     /* border-bottom: 5px solid red; */
@@ -241,7 +259,8 @@ body{
         border-radius: 90px;
     }
     .ImageDiv{
-
+        height: 180px;
+        /* animation: none; */
     }
     .newProfileImg{
         position: relative;
