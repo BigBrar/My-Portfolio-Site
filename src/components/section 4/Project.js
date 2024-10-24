@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import styles from './projects.module.css'
 import {  AnimatePresence, motion } from "framer-motion";
+import openIcon from '../../assets/openIcon.png'
 
 export default function Project({title,description,image,techStack,githubLogo,sourceCode}){
     const [modalShow, setmodalShow] = useState(false)
@@ -49,13 +50,17 @@ export default function Project({title,description,image,techStack,githubLogo,so
             </motion.div>}
             <motion.div 
             onClick={()=>setmodalShow(modalShow?false:true)}
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ y:-7 }}
+            transition={{ duration: 0.2  }}
             onHoverStart={e => {}}
             onHoverEnd={e => {}}
             className={styles.projectPreview}>
                 <div className={styles.previewItem}>
                     <img className={styles.previewImage} src={image} alt='image for the project'/>
                     <h3>{title}</h3>
+                    <div className={styles.openDivIcon}>
+                        <img className={styles.openIconImg} src={openIcon} alt='open image icon'/>
+                    </div>
                     {/* <div className={styles.modalButton}>
                     <h4 className={styles.modalToggle} onClick={()=>setmodalShow(modalShow?false:true)}>Expand</h4>
                     </div> */}

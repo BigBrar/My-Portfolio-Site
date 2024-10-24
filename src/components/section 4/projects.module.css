@@ -133,25 +133,27 @@ button:hover{
 
 .previewItem{
     display: grid;
+    position: relative;
     align-items: center;
     justify-content: center;
     border-style: solid;
     padding: 6px;
     border-radius: 10px;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    transition: background-color 0.2s, color 0.3s, border-color 0.3s;
 }
 
 .previewItem:hover{
     background-color: white;
     border-color: transparent;
     cursor: pointer;
-    filter: drop-shadow(-0px 0px 3px #555);
+    filter: drop-shadow(-0px 0px 1px #555);
 }
 
 .previewImage{
     width: 300px;
     border-radius: 5px;
     border-style: solid;
+    
     border-width: 2px;
 }
 
@@ -175,6 +177,15 @@ button:hover{
     border-color: transparent;
 }
 
+.openDivIcon{
+    position: absolute;
+    bottom: 0;
+}
+
+.openIconImg{
+    width: 30px;
+}
+
 @media (max-width: 708px) {
     .projectItem{
         width: 90%;
@@ -184,4 +195,10 @@ button:hover{
         margin: 0;
         padding: 0;
     }
+    /* .elementContainer{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 90%;
+        overflow-x: auto;
+    } */
 }
