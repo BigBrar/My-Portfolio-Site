@@ -32,17 +32,17 @@ export default function Project({title,description,image,techStack,githubLogo,so
             <div className={styles.projectHeading}>
                 <h2>{title}</h2>
             </div>
-            <h4>Tech Stack - </h4>
+            <h4>Skills Used - </h4>
                 {techStack.map((item)=>(
                     <p> {item}</p>
                 ))}
-            <a href={sourceCode}>
             <div className={styles.githubDiv}>
+            <a href={sourceCode}>
                 <div className={styles.githubSource}>
                 <img className={styles.githubImg} src={githubLogo} alt='github logo'/>
                 </div>
-            </div>
             </a>
+            </div>
             <div className={styles.projectDescription}>
                 <p>{description}</p>
             </div>
