@@ -10,13 +10,15 @@ export default function Introduction({styles, Image}){
     };
     return (
         <>
+        <section id='home' />
         <div className={styles.navbar}>
-        <a className={`${styles.navItem} ${styles.active}`}>Home</a>
-        <a className={styles.navItem}>Skills</a>
-        <a className={styles.navItem}>Projects</a>
-        <a className={styles.navItem}>Contact</a>
+        <a href='#home' className={`${styles.navItem} ${styles.active}`}>Home</a>
+        <a href='#skills' className={styles.navItem}>Skills</a>
+        <a href='#projects' className={styles.navItem}>Projects</a>
+        <a href='#contact' className={styles.navItem}>Contact</a>
      </div>
 
+      
      <div className={styles.firstPart}>
         <div className={styles.introduction}>
           <div className={styles.profileDiv}>

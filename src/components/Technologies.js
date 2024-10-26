@@ -10,6 +10,7 @@ import ProgressBar from './ProgressBar';
 
 export default function Technologies({styles}){
     return (
+      <>
         <div className={styles.skillsDiv}>
         <h1 className={styles.skillsHeading}>Skills & Technologies</h1>
         <div className={styles.skills}>
@@ -43,7 +44,9 @@ export default function Technologies({styles}){
           <div className={styles.skillItem1}>
             <ProgressBar barLength={380} skillImage={MongoDBImage} skillPercentage={'70%'} skillName="MongoDB"/>
           </div>
+          
         </div>
      </div>
+     </>
     )
 }

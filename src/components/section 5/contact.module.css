@@ -1,0 +1,18 @@
+.emailDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.emailImage{
+    width: 30px;
+    height: 100%;
+    /* border-radius: 10px; */
+}
+
+.upworkImage{
+    width: 30px;
+    height: 100%;
+    /* border-radius: 90%; */
+}

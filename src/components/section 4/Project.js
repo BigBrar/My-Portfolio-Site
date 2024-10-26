@@ -2,6 +2,7 @@ import { useRef, useState } from 'react'
 import styles from './projects.module.css'
 import {  AnimatePresence, motion } from "framer-motion";
 import openIcon from '../../assets/openIcon.png'
+import closeIcon from '../../assets/closeIcon.png'
 
 export default function Project({title,description,image,techStack,githubLogo,sourceCode}){
     const [modalShow, setmodalShow] = useState(false)
@@ -13,7 +14,8 @@ export default function Project({title,description,image,techStack,githubLogo,so
     return (
         <AnimatePresence mode='wait'>
             {modalShow && 
-            <motion.div className={styles.backdrop}
+            <motion.div
+            className={styles.backdrop}
             variants={backdrop}
             initial="hidden"
             animate="visible"
@@ -44,6 +46,7 @@ export default function Project({title,description,image,techStack,githubLogo,so
             <div className={styles.projectDescription}>
                 <p>{description}</p>
             </div>
+            {/* <div className={styles.close}></div> */}
             <button onClick={()=>setmodalShow(modalShow?false:true)}>close</button>
             </motion.div>
 

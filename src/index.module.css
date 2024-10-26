@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 ::-webkit-scrollbar{
     width: 1.4em;
     height: 1em;
@@ -38,15 +41,24 @@ body{
     /* padding-left: 500px;
     padding-right: 500px; */
     display: flex;
+    /* position: fixed; */
     align-items: center;
     justify-content: center;
+    padding-bottom: 10px;
+    top: -0px;
+    width: 100%;
     gap: 10rem;
+    z-index: 1000000;
     padding-top: 10px;
+    backdrop-filter: blur(40px);
+    /* background-color: #fadfcf; */
+
 }
 
-/* .navItem{
-    background-color: white;
-} */
+.navItem{
+    text-decoration: none;
+    color: black;
+}
 
 .navItem.active {
     background-color: #dd6a58;
@@ -245,8 +257,8 @@ body{
 @media (max-width: 1065px) {
     .navbar{
         font-size: 15px;
-        gap: 35px;
-        margin-top: 20px;
+        gap: 45px;
+        /* margin-top: 20px; */
     }
     .firstPart{
         margin-top: 90px;

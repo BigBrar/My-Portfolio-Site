@@ -19,7 +19,7 @@ export default function Skills(){
     ]
     return (
     <>
-    <div className={styles.parentDiv}>
+    <section className={styles.parentDiv}>
     <div className={`${styles.mainDiv1} ${styles.snapsInline}`}>
         {skills.map((skill)=>(
             <SkillItem Heading={skill.heading} styles={styles} paraText={skill.para}/>        
@@ -27,7 +27,7 @@ export default function Skills(){
     {/* <SkillItem Heading={firstH} styles={styles} paraText={firstP}/>
     <SkillItem Heading={firstH} styles={styles} paraText={firstP}/> */}
     </div>
-    </div>
+    </section>
     </>
     )
 }
