@@ -27,6 +27,13 @@ export default function Projects(){
             sourceCode:'https://github.com/bigbrar/instagram_reel_analyser'
         },
         {
+            title:'CollegeCore',
+            description:`This project arose from a practical need to solve accessibility issues with the official college website, which was plagued by SSL certificate problems and unreliable hosting. Built with Python Flask, this clone operates smoothly on the college's local network, providing uninterrupted access to essential services like student results and profiles. Through careful network analysis and request inspection, the application accurately replicates the original website's functionality, handling complex elements like session management and user authentication. The project evolved through three major iterations, each bringing significant improvements: the initial version utilized Python's requests module for basic functionality, the second implementation leveraged async programming for concurrent data fetching and caching, and the final version employed httpx for enhanced performance with built-in async and session support. Now serving as the go-to platform for both students and staff, this solution enables quick access to student information and results, demonstrating how a well-engineered alternative can effectively replace a problematic system.`,
+            techStack:['Flask framework', 'Session Management', 'Async programming'],
+            image:Project6,
+            sourceCode:'https://github.com/BigBrar/collegecore'
+        },
+        {
             title:'Tic Tac Toe with WebSockets',
             description:`This project is a modern take on the classic Tic Tac Toe game, featuring both local and online multiplayer modes. In local mode, friends can play together on the same device, but the real excitement begins with the online multiplayer feature. When players activate online mode, the game connects to a Python-powered WebSocket server that matches them with a random opponent ready to play. The entire game communication happens in real-time through WebSockets, ensuring that every move is instantly synchronized between both players' screens. The system also handles disconnections gracefully – if your opponent leaves mid-game or loses connection, you'll be notified immediately. Built with a clean HTML/CSS/JavaScript frontend and a Python backend, this project demonstrates how traditional games can be transformed into engaging online experiences while maintaining their simple charm.`,
             techStack:['- WebSocket Server Programming', '- Real-time Communication', '- Connection State Management'],
@@ -34,26 +41,20 @@ export default function Projects(){
             sourceCode:'https://github.com/BigBrar/Websocket-Tic-Tac-Toe'
         },
         {
-            title:'Instagram Reel Analyser',
-            description:description1,
-            techStack:['Playwright', 'BeautifulSoup', 'Python'],
+            title:'Pass Keeper',
+            description:`This project is a secure password management web application built with Python Flask that helps users create and store strong passwords for their various accounts. With a clean and intuitive interface, users can create their own secure account to access the password manager locally. Once logged in, the app generates robust passwords for different accounts while allowing users to add custom descriptions for easy identification. All generated passwords are displayed on a convenient dashboard where they can be quickly copied with a single click. The application prioritizes security by implementing bcrypt encryption to ensure all sensitive data remains protected. Whether you're managing passwords for social media, email, or banking accounts, this tool offers a secure and organized way to store and access your credentials without the need to remember multiple complex passwords.`,
+            techStack:['Session Management', 'User Authentication', 'Python/Flask'],
             image:Project4,
             sourceCode:'https://github.com/BigBrar/password-manager'
         },
         {
-            title:'Instagram Reel Analyser',
-            description:description1,
-            techStack:['Playwright', 'BeautifulSoup', 'Python'],
+            title:'Weather Checker',
+            description:`This project is an interactive weather application that brings weather data to life through its dynamic user interface. Users can easily check weather conditions by entering a country code and city name (like "CAN, Surrey"). What makes this app special is its responsive design – the background actively changes to match the current weather conditions of the searched location, creating an immersive experience. The application fetches real-time data including temperature, humidity, current weather conditions, and sunset/sunrise timings from a weather API. Built entirely on the client side using HTML, CSS, and JavaScript, this web app showcases how weather information can be presented in an engaging and visually appealing way, making checking the weather less of a task and more of an experience.`,
+            techStack:['Html/Css', 'Javascript', 'Json Parsing'],
             image:Project5,
             sourceCode:'https://github.com/BigBrar/Beautiful-weather-web'
         },
-        {
-            title:'Instagram Reel Analyser',
-            description:description1,
-            techStack:['Playwright', 'BeautifulSoup', 'Python'],
-            image:Project6,
-            sourceCode:'https://github.com/BigBrar/simtmutksar'
-        },
+        
     ]
     return (
         <div className={classes.sectionContainer}>
