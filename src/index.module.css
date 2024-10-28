@@ -249,7 +249,7 @@ body{
     border-radius: 10px;
     display: grid;
     align-items: center;
-    filter: drop-shadow(-6px 0px 6px #555);
+    /* filter: drop-shadow(-6px 0px 6px #555); */
     /* style={{width:'35px', borderRadius:'10px', display:'grid', alignItems:'center' */
 }
 

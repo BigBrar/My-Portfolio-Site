@@ -8,7 +8,7 @@
     /* border-radius: 10px; */
     display: grid;
     align-items: center;
-    filter: drop-shadow(0px 0px 2px #7e7c7c);
+    /* filter: drop-shadow(0px 0px     0.5px #7e7c7c)    ; */
     /* style={{width:'35px', borderRadius:'10px', display:'grid', alignItems:'center' */
 }
 
