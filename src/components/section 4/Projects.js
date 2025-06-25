@@ -9,6 +9,7 @@ import Project5 from '../../assets/project5Screenshot.png'
 import Project6 from '../../assets/project6Screenshot.png'
 import Project7 from '../../assets/project7Screenshot.jpeg'
 import Project8 from '../../assets/project8Screenshot.png'
+import Project9 from '../../assets/project9Screenshot.png'
 
 export default function Projects(){
     const description1 = `ExamPlify is an innovative web application designed to revolutionize how students approach exam preparation through data-driven insights. At its core, the platform features a sophisticated Question Paper Analyzer that employs advanced analytics to process historical examination papers, identifying patterns and predicting high-probability topics for upcoming exams. By analyzing multiple PDF documents and images of past papers, the system generates increasingly accurate predictions, helping students focus their study efforts on topics most likely to appear in their examinations. The application comprises three specialized modules, with the Question Paper Analyzer being the cornerstone feature that develops more precise predictions with each additional paper processed. ExamSmart's intuitive design and powerful analytical capabilities empower students to make informed decisions about their study strategies, ultimately optimizing their exam preparation time and enhancing their potential for academic success.`
@@ -34,6 +35,13 @@ export default function Projects(){
             techStack:['Frontend: React', 'Backend: Flask', 'Processing: Gemini'],
             image:Project1,
             sourceCode:'https://github.com/bigbrar/examplify'
+        },
+        {
+            title:'Insta Reel Scroller',
+            description:`Tired of endless scrolling through irrelevant Instagram Reels? This command-line tool intelligently curates your Reels feed. Leveraging the power of Playwright to automate browsing and AI to analyze reel captions, it determines if content is informational or educational. Reels deemed valuable are engaged with for longer, signaling your preferences to Instagram's algorithm. This bot helps you break free from time-wasting content and subtly reshape your feed towards topics you genuinely find useful and engaging.`,
+            techStack:['Playwright', 'BeautifulSoup', 'Prompt Engineering'],
+            image:Project9,
+            sourceCode:'https://github.com/bigbrar/Insta_reel_scroller'
         },
         {
             title:'Instagram Reel Analytics',
