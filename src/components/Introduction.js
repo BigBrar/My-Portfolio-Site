@@ -27,7 +27,8 @@ export default function Introduction({styles, Image}){
             {/* <img className={styles.profileImg} src={Image} alt='Profile photo'/> */}
             <div id='ImageDiv' className={styles.ImageDiv}>
             </div>
-                <img className={styles.newProfileImg} src={ImageNew} alt='Profile photo'/>
+                {/* <img className={styles.newProfileImg} src={ImageNew} alt='Profile photo'/> */}
+                <img className={styles.newProfileImg} src="https://res.cloudinary.com/dzfmbmuoo/image/upload/v1741926297/profile1_k4wvey.png" alt='Profile photo'/>
           </div>
           <div className={styles.profileDesc}>
             <h2>I am <span className={styles.textBeautify}>Deepinder</span>, an enthusiastic <span className={styles.textBeautify}> Web Developer</span></h2>

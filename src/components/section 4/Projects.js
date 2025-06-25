@@ -7,11 +7,27 @@ import Project3 from '../../assets/project3Screenshot.png'
 import Project4 from '../../assets/project4Screenshot.png'
 import Project5 from '../../assets/project5Screenshot.png'
 import Project6 from '../../assets/project6Screenshot.png'
+import Project7 from '../../assets/project7Screenshot.jpeg'
+import Project8 from '../../assets/project8Screenshot.png'
 
 export default function Projects(){
     const description1 = `ExamPlify is an innovative web application designed to revolutionize how students approach exam preparation through data-driven insights. At its core, the platform features a sophisticated Question Paper Analyzer that employs advanced analytics to process historical examination papers, identifying patterns and predicting high-probability topics for upcoming exams. By analyzing multiple PDF documents and images of past papers, the system generates increasingly accurate predictions, helping students focus their study efforts on topics most likely to appear in their examinations. The application comprises three specialized modules, with the Question Paper Analyzer being the cornerstone feature that develops more precise predictions with each additional paper processed. ExamSmart's intuitive design and powerful analytical capabilities empower students to make informed decisions about their study strategies, ultimately optimizing their exam preparation time and enhancing their potential for academic success.`
     const description2 = `This project is a web scraping tool that helps you understand how Instagram Reels are performing for any public profile. Simply input a username, and the tool automatically goes through all their Reels, collecting the number of views, likes, and comments for each Reel. Using browser automation, it smoothly navigates through Instagram (without needing manual login) and gathers these engagement metrics from every Reel on the profile. The tool then neatly packages all this statistical data into a JSON format, organizing the Reels from lowest to highest engagement. Whether you're a content creator wanting to understand what works best or just curious about Reel performance patterns, this tool makes it easy to get these insights without the manual work of checking each Reel individually.`
     const projects = [
+        {
+            title:'Punjab Power Supply Check',
+            description:`Punjab Power Cut Tracker is a practical web application developed to make real-time electricity supply information easily accessible to residents across Punjab. The project replicates and extends the core functionality of the official PSPCL mobile app—specifically the power supply status feature—into a user-friendly web interface that requires no installation or login. By reverse-engineering the app's network requests, the backend captures and utilizes a secure tokenId to fetch live data from PSPCL’s internal API, delivering up-to-date outage information based on district, division, and subdivision selections.`,
+            techStack:['Frontend: React', 'Backend: Flask', 'API: PSPCL'],
+            image:Project7,
+            sourceCode:'https://github.com/BigBrar/pspcl-power-supply-check'
+        },
+        {
+            title:'Websocket Chat Application',
+            description:`Step into a world of instant connection with this real-time chat application. Designed for seamless communication, it offers a secure login system, allowing users to effortlessly connect and engage in live conversations. Experience immediate message delivery, where every word shared is instantly visible to the recipient. The application intelligently manages chat histories, storing messages along with details like sender, receiver, and timestamps, ensuring your conversations are always organized and easily accessible. Stay constantly updated with a built-in ping mechanism that actively checks for new messages, keeping your chats fresh and responsive. Planned future enhancements include comprehensive user profile management and support for multimedia messages, aiming to enrich your interactive experience even further.`,
+            techStack:['Frontend: React', 'Backend: Websocket Flask', 'Technology: Websockets'],
+            image:Project8,
+            sourceCode:'https://github.com/BigBrar/websocket-chat-web'
+        },
         {
             title:'Exam Preparation Assistant',
             description:description1,
@@ -54,6 +70,7 @@ export default function Projects(){
             image:Project5,
             sourceCode:'https://github.com/BigBrar/Beautiful-weather-web'
         },
+        
         
     ]
     return (
